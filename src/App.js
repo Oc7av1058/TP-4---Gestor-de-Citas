@@ -1,20 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
 import React from "react";
-import crearCita from './CrearCita';
-import listadoCitas from './ListadoCitas';
+import CrearCita from './componentes/CrearCita';
+import ListadoCitas from './componentes/ListadoCitas';
 
 function App() {
+  var lista = [{
+    Mascota:"Petty",
+    Dueño:"Juan",
+    Fecha:2023/6/8,
+    Hora:"20:3",
+    Sintomas: "Tiene ronchas"
+  }
+]
+   
 
+  
   return (
     <>
     
-    <h1>Administrador de pacientes</h1>
+    <center><h1>Administrador de pacientes</h1></center>
     <div className='row'>
-    <crearCita/>
+    <CrearCita/>
     </div>
+   
     <div className='row'>
-    <listadoCitas/>
+    <ListadoCitas citas={lista}/>
     </div>
 
     </>

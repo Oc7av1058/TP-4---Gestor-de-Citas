@@ -1,9 +1,35 @@
 import logo from './logo.svg';
 import './App.css';
+import React from "react";
+import crearCita from './CrearCita';
+import listadoCitas from './ListadoCitas';
 
 function App() {
+
   return (
-    <div className="App">
+    <>
+    
+    <h1>Administrador de pacientes</h1>
+    <div className='row'>
+    <crearCita/>
+    </div>
+    <div className='row'>
+    <listadoCitas/>
+    </div>
+
+    </>
+  )
+}
+
+export default App;
+
+
+
+
+
+
+/*
+<div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -20,6 +46,4 @@ function App() {
       </header>
     </div>
   );
-}
-
-export default App;
+*/

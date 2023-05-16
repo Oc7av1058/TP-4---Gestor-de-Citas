@@ -5,7 +5,7 @@ function Cita({cita}) {
   
   return (
     <>
-    <h2>Administra tu cita</h2>
+    <div className="cita">
     <p>mascota:</p>
     <span>{cita.Mascota}</span>
     <p>dueño:</p>
@@ -17,6 +17,7 @@ function Cita({cita}) {
     <p>sintomas:</p>
     <span>{cita.Sintomas}</span>
     <button class="button elimnar u-full-width">Eliminar ×</button>
+    </div>
     </>
   );
     

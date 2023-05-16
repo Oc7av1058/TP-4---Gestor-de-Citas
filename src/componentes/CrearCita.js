@@ -5,8 +5,11 @@ function CrearCita(crearCita) {
 
   return (
     <>
+    
     <h2>Crear mi cita</h2>
+    
     <Formulario/>
+   
     </>
   )
 }

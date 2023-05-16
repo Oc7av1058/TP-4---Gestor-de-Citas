@@ -9,7 +9,7 @@ function App() {
     Mascota:"Petty",
     Dueño:"Juan",
     Fecha:2023/6/8,
-    Hora:"20:3",
+    Hora: "20:3",
     Sintomas: "Tiene ronchas"
   }
 ]
@@ -21,13 +21,18 @@ function App() {
     
     <center><h1>Administrador de pacientes</h1></center>
     <div className='row'>
+    <div class="container">
+      <div class="row">
+        <div class="one-half column">
     <CrearCita/>
     </div>
    
     <div className='row'>
     <ListadoCitas citas={lista}/>
     </div>
-
+    </div>
+    </div>
+    </div>
     </>
   )
 }

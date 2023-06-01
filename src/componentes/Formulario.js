@@ -7,8 +7,8 @@ function Formulario() {
   const [mascota, setMascota]= useState("")
   const [propietario, setPropietario]= useState("")
   const [fechaCita, setFecha]= useState(Date.now)
-  const [mascota, setMascota]= useState("")
-  const [mascota, setMascota]= useState("")
+  const [hora, setHora]= useState()
+  const [sintomas, setMascota]= useState("")
   
   return (
     <>

@@ -7,16 +7,16 @@ function Cita({cita}) {
     <>
     <div className="cita">
     <p>mascota:</p>
-    <span>{cita.Mascota}</span>
+    <span>{cita.mascota}</span>
     <p>dueño:</p>
-    <span>{cita.Dueño}</span>
+    <span>{cita.propietario}</span>
     <p>fecha:</p>
-    <span>{cita.Fecha}</span>
+    <span>{cita.fecha}</span>
     <p>hora:</p>
-    <span>{cita.Hora}</span>
+    <span>{cita.hora}</span>
     <p>sintomas:</p>
-    <span>{cita.Sintomas}</span>
-    <button class="button elimnar u-full-width">Eliminar ×</button>
+    <span>{cita.sintomas}</span>
+    <button className="button elimnar u-full-width">Eliminar ×</button>
     </div>
     </>
   );

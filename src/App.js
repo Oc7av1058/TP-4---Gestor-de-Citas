@@ -7,14 +7,19 @@ import ListadoCitas from './componentes/ListadoCitas';
 
 function App() {
   const [lista, setLista] = useState([{
-    Mascota:"Petty",
-    Dueño:"Juan",
-    Fecha:2023/6/8,
-    Hora: "20:3",
-    Sintomas: "Tiene ronchas"
+    mascota:"Petty",
+    propietario:"Juan",
+    fecha:2023/6/8,
+    hora: "20:3",
+    sintomas: "Tiene ronchas"
   }
 ]
 )
+
+const actualizarListado=(cita)=>{
+setLista([...lista, cita])
+console.log(lista);
+}
 
   
   return (
@@ -22,12 +27,12 @@ function App() {
     
     <center><h1>Administrador de pacientes</h1></center>
     <div className='row'>
-    <div class="container">
-      <div class="row">
-        <div class="one-half column">
+    <div className="container">
+      <div className="row">
+        <div className="one-half column">
         <h2>Crear mi cita</h2>
     
-    <Formulario/>
+    <Formulario sacarDatos={actualizarListado}/>
     </div>
    
     <div className='row'>

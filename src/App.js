@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import React from "react";
-import CrearCita from './componentes/CrearCita';
+import React, { useState } from "react";
+import Formulario from './componentes/Formulario';
+
 import ListadoCitas from './componentes/ListadoCitas';
 
 function App() {
-  var lista = [{
+  const [lista, setLista] = useState([{
     Mascota:"Petty",
     Dueño:"Juan",
     Fecha:2023/6/8,
@@ -13,7 +14,7 @@ function App() {
     Sintomas: "Tiene ronchas"
   }
 ]
-   
+)
 
   
   return (
@@ -24,7 +25,9 @@ function App() {
     <div class="container">
       <div class="row">
         <div class="one-half column">
-    <CrearCita/>
+        <h2>Crear mi cita</h2>
+    
+    <Formulario/>
     </div>
    
     <div className='row'>

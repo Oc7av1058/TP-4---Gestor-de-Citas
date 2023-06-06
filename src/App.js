@@ -7,6 +7,7 @@ import ListadoCitas from './componentes/ListadoCitas';
 
 function App() {
   const [lista, setLista] = useState([{
+    id:0,
     mascota:"Petty",
     propietario:"Juan",
     fecha:2023/6/8,
@@ -20,7 +21,9 @@ const actualizarListado=(cita)=>{
 setLista([...lista, cita])
 console.log(lista);
 }
-
+const borrarLista=(indice)=>{
+    setlista(lista=>lista.id !== indice) 
+  }
   
   return (
     <>

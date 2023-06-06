@@ -8,7 +8,8 @@ function ListadoCitas({citas}) {
     <div className="one-half column">
     <h2>Administra tu cita</h2>
     <ul>
-      {citas.map((item) => (
+      {citas.map((item,cont) => (
+        cita.id=cont,
         <Cita cita={item} />
       ))}
     </ul>

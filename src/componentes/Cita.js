@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function Cita({cita}) {
+function Cita({cita},{borrarCita}) {
   
   return (
     <>
@@ -16,7 +16,7 @@ function Cita({cita}) {
     <span>{cita.hora}</span>
     <p>sintomas:</p>
     <span>{cita.sintomas}</span>
-    <button className="button elimnar u-full-width">Eliminar ×</button>
+    <button className="button elimnar u-full-width" onClick={pasarCita}>Eliminar ×</button>
     </div>
     </>
   );

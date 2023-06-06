@@ -2,7 +2,7 @@ import React from "react";
 import Cita from "./Cita";
 
 
-function ListadoCitas({citas}) {
+function ListadoCitas({citas}, {borrarCita}) {
   
   return (
     <div className="one-half column">

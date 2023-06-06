@@ -4,7 +4,8 @@ import React, { useState } from "react";
 import Formulario from './componentes/Formulario';
 
 import ListadoCitas from './componentes/ListadoCitas';
-
+// validar form
+//limpiar form
 function App() {
   const [lista, setLista] = useState([{
     id:0,

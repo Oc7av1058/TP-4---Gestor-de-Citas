@@ -22,8 +22,8 @@ const actualizarListado=(cita)=>{
 setLista([...lista, cita])
 console.log(lista);
 }
-const borrarLista=(indice)=>{
-    setlista(lista=>lista.id !== indice) 
+const borrarDeLista=(indice)=>{
+  setLista(lista.filter((citaList) => citaList.id !== indice))
   }
   
   return (
@@ -40,7 +40,7 @@ const borrarLista=(indice)=>{
     </div>
    
     <div className='row'>
-    <ListadoCitas citas={lista}/>
+    <ListadoCitas citas={lista} borrarCita={borrarDeLista}/>
     </div>
     </div>
     </div>

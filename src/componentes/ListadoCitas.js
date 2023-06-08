@@ -2,15 +2,15 @@ import React from "react";
 import Cita from "./Cita";
 
 
-function ListadoCitas({citas}, {borrarCita}) {
+function ListadoCitas({citas,borrarCita}) {
   
   return (
     <div className="one-half column">
     <h2>Administra tu cita</h2>
     <ul>
       {citas.map((item,cont) => (
-        cita.id=cont,
-        <Cita cita={item} />
+        item.id=cont,
+        <Cita cita={item} borrarCita={borrarCita} />
       ))}
     </ul>
     </div>

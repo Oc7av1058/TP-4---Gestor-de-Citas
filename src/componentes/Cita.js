@@ -1,8 +1,11 @@
 import React from "react";
 
 
-function Cita({cita},{borrarCita}) {
+function Cita({cita,borrarCita}) {
   
+  const pasarCita = ()=>{
+   borrarCita(cita.id)
+  }
   return (
     <>
     <div className="cita">

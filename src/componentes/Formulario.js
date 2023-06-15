@@ -10,7 +10,13 @@ function Formulario({sacarDatos}) {
     hora:"--:--",
     sintomas:''
   })
-
+  /*
+  if(datos.mascota==''||datos.propietario=='')
+  {
+    console.log("Error!!!!");
+    
+  }
+  */
   const onChangeHandle = (e)=>{
     setDatos({
       ...datos, // los 3 puntos son para hacer una copia y no cambiar el resto del objeto
